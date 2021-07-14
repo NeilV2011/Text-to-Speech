@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <meta charset="UTF-8">
+        <script src="quiz.js"></script>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <form onsubmit="return rightOrWrongFunction()">
+            <input id="id"type="text">
+            <input id="somethingId" type="submit" onclick="rightOrWrongFunction()">
+        </form>
+        <script>
+        function rightOrWrongFunction(){
+            var w=document.getElementById("id").value;
+            if (w=="blank"){
+                document.getElementById("demo").innerHTML = "Correct!";
+            }
+            else{
+                document.getElementById("demo").innerHTML = "Incorrect!"
+            }
+        }
+        </script>
+    </body>
+</html>

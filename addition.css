@@ -1,0 +1,66 @@
+body{
+    background-color:rgb(162, 224, 162);
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  #in{
+      margin-left:300px;
+      height:20px;
+      width:200px;
+      font-size:14px;
+      margin-top:8%;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #numb{
+      outline:none;
+      border:0px;
+      margin-left:300px;
+      height:20px;
+      width:200px;
+      font-size:16px;
+      margin-top:10%;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-top:10%;
+  }
+  h1{
+      text-align:Center;
+      font-family:tahoma;
+      font-weight:lighter;
+  }
+  #numb, #in, #plus, #answer, #how{
+      display:Flex;
+      outline:none;
+      border:rgb(162, 224, 162);
+      height:40px;
+      width:200px;
+      font-size:16px;
+  }
+  #plus{
+      margin-left:400px;
+      margin-top:-125px;
+      font-size:32px;
+      font-weight:bolder;
+
+  }
+  #equals{
+      font-weight:bolder;
+      font-size:32px;
+      margin-left:650px;
+      margin-top:-75px;
+  }
+
+#answer{
+    outline:none;
+    margin-left:800px;
+    margin-top:-75px;
+}
+#how{
+    color:blue;
+    margin-top:15%;
+    margin-left:42.5%;
+}
+l{
+    color:black;
+}
+

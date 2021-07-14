@@ -1,0 +1,41 @@
+body{
+    background-image: url("/musical-background-2842924_1280.webp");
+    
+}
+
+#myBtn{
+    background-color:#4386fc;
+    color:white;
+    height:75px;
+    width:200px;
+    font-size:20px;
+    border:1px solid white;
+    border-radius:10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#myBtn:hover{
+    background-color:White;
+    color:#4386fc;
+    border:1.5px solid #4386fc;
+}
+#myBtn:active{
+    background-color:#B56587;
+    color:white;
+    border:1px solid white;
+}
+.myclass{
+    text-align:center;
+    margin-top:15%;
+}
+h1{
+    color:white;
+    font-family:spectral;
+    text-align:center;
+    
+}
+
+p{
+    color:white;
+    text-align:center;
+    font-family:alegreya sans SC;
+}

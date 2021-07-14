@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fd</title>
+    </head>
+<body>
+<form onsubmit="myfunction()">
+<input id="urlr" type="url">
+<input type="submit">
+</form>
+<iframe  id="frame"></iframe>
+<script>
+ function myfunction(){
+    var b = document.getElementById("urlr").value
+    document.getElementById("frame").src = b
+    console.log(b)
+}
+
+</script>
+<iframe src="https://www.yelp.com"></iframe>
+</body>
+</html>

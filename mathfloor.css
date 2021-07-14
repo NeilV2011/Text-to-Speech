@@ -1,0 +1,42 @@
+body{
+    background-color:rgb(162, 224, 162);
+}
+h1{
+    color:rgb(112, 74, 216);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    font-size:50px;
+}
+p{
+    text-align:center;
+    color:rgb(72, 128, 192);
+    margin-top:50px;
+    font-size:20px;
+}
+hr{
+    width:70%;
+    align-content:center;
+    border: 10px solid green;
+    border-radius:20px;
+}
+#idid{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    margin-top:110px;
+}
+a{
+ text-decoration:none;
+ font-size:30px;
+ 
+}
+a:active{
+    color:hotpink;
+}
+i{
+    visibility:visible;
+    margin-top:50px;
+
+}
+img{
+    filter: grayscale(100%);
+}

@@ -1,0 +1,125 @@
+h1{
+    color:white;
+    font-weight:lighter;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    overflow:hidden;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.txte{
+    text-align: center;
+}
+#txter{
+    text-align:Center;
+    width:40%;
+    line-height: 55px;
+    font-size:25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top:120px;
+}
+.submit{
+    text-align:center;
+}
+#submit{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:100px;
+    border-radius:15px;
+    border:2px solid grey;
+    color:white;
+    -webkit-text-stroke:0.5px grey;
+    font-size:40px;
+    font-weight:bolder;
+    opacity:50%;
+}
+#par{
+    font-size:20px;
+    writing-mode:vertical-rl;
+    margin-top:-250px;
+    opacity:0%;
+}
+#para{
+    font-size:20px;
+    writing-mode:vertical-rl;
+    margin-left:925px;
+    margin-top:-360px;
+    padding-right:25px;
+    padding-left:300px;
+    padding-top:215px;
+    padding-bottom:250px;
+    background-color:grey;
+    color:white;
+}
+#compatibility{
+    margin-top:-580px;
+    margin-left:0px !important;
+
+}
+#submit:hover{
+    opacity:100%;
+}
+#submit:active{
+    color:ivory;
+    -webkit-text-stroke:paleturquoise;
+    background-color:lightsteelblue;
+
+
+}
+
+#i{
+    margin-top:0%;
+    margin-left:75%;
+
+}
+#id{
+    margin-top:8%;
+    margin-left:75%;
+
+}
+#ide{
+    margin-top:8%;
+    margin-left:75%;
+
+}
+#ider{
+    margin-top:8%;
+    margin-left:75%;
+
+}
+select{
+    padding:1%;
+}
+select:focus{
+    outline:none;
+}
+p{
+    margin-left:75%;
+}
+#vol{
+    margin-top:-35%;
+    color:white;
+}
+#pitch{
+    margin-top:8%;
+    color:white;
+}
+#rate{
+    margin-top:8%;
+    color:white;
+}
+#Acc{
+    margin-top:4%;
+    color:white;
+}
+body{
+    background-color:#39b101;
+}
+#j{
+    margin-left:75%;
+    margin-top:7.5%;
+
+}

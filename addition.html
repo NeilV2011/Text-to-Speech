@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Addition</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="addition.css">
+
+    </head>
+    <body>
+      <h1>Addition</h1>
+      <input id="in" type="number" placeholder="Addend 1 Goes Here...">
+      <input id="numb" type="number" placeholder="Addend 2 Goes Here..."> 
+      <p id="plus">+</p>
+      <p  onclick="myFunction()" accesskey="b" id="equals">=</p>
+      <input oninput="myFunction()" placeholder="Answer Comes Out Here..." id="answer" type="number">
+      <script> 
+        function myFunction(a,b){
+        var a = document.getElementById("in").value;
+        var b = document.getElementById("numb").value;
+        var x = document.getElementById("answer").value = Number(a)+Number(b)
+      }
+      
+      </script>
+
+
+      <div id="how"><n title="How to use this" data-toggle="collapse" target="#myCollapsible">How</n><pre> </pre> <l>|</l><pre> </pre><j title="random equation" onclick="functionn()">Random Example</j></div>
+      <script>
+        function functionn(){
+          var random = Math.floor(Math.random()* 10000);
+          document.getElementById("in").value = random;
+          var rando = Math.floor(Math.random() * 10001);
+          document.getElementById("numb").value = rando;
+          var p = document.getElementById("numb").value;
+          var j = document.getElementById("in").value;
+          document.getElementById("answer").value = Number(p)+Number(j);
+        }
+      </script>
+      
+
+</html>

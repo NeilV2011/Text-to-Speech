@@ -1,0 +1,15 @@
+h1{
+    color:#ffffff;
+    text-align:center;
+    padding:20px;
+    border:2px solid black;
+    background:rgb(91, 109, 170) ;  
+    margin-top:-7.5px;
+    margin-right:-8.3px;
+    margin-left:-8.3px;
+}
+h1:hover {
+    font-family:cursive;
+    background:rgb(137, 170, 207)
+
+}

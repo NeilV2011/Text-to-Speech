@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text-to-Speech - API.net </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="texttospeech.css">
+        <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1024px-Speaker_Icon.svg.png">
+    </head>
+    <body onload="setTimeout(checkCompatibility, 2000)">
+        <h1>Text-to-Speech Application</h1>
+        <form onsubmit="myFunction()">
+            <div class="txte">
+            <input placeholder="Text that Should be Spoken..." id="txter" type="Text"  autofocus></div>
+            <div class="submit">
+            <input id="submit" type="submit" value="Say It"></div>
+            <p id="par"><i class="fa fa-cog"></i>
+                User Preferences
+            </p>
+            <p id="para"><i class="fa fa-cog"></i>
+                Audio Controls
+            </p>            
+            <p id="compatibility"><progress></progress></p>
+            <div class="settings">
+            <select  id="i" name="1">
+                <option value="0">0% (Muted)</option>
+                <option value="0.2">10%</option>
+                <option value="0.4">20%</option>
+                <option value="0.6">30%</option>
+                <option value="0.8">40%</option>
+                <option value="1">50%</option>
+                <option value="1.2">60%</option>
+                <option value="1.4">70%</option>
+                <option value="1.6">80%</option>
+                <option value="1.8">90%</option>
+                <option value="2">100% (Max)</option>
+
+
+
+
+
+
+
+            </select><Br/><Br/>
+            <select  id="j" name="1">
+                <option value="0">0% (Muted)</option>
+                <option value="0.1">10%</option>
+                <option value="0.2">20%</option>
+                <option value="0.3">30%</option>
+                <option value="0.3">30%</option>
+                <option value="0.4">40%</option>
+                <option value="0.5">50%</option>
+                <option value="0.6">60%</option>
+                <option value="0.7">70%</option>
+                <option value="0.8">80%</option>
+                <option value="0.9">90%</option>
+                <option value="1">100% (Max) (Default) </option>
+
+
+
+
+
+
+
+            </select><Br/><Br/>
+<br/><br/>
+            <select value="EN" id="ider" name="4">
+                <optgroup label="Asian Languages"></optgroup>
+                    <option value="zh" name="Chinese">中文 (Chinese)</option>
+                    <option value="hi" name="Hindi">हिंदी (Hindi) </option>                   </option>
+                    <option value="ja" name="Japanese">日本語 (Japanese) </option>
+                    <option value="ko" name="Korean">한국어 (Korean) </option>
+                </optgroup>
+                <optgroup label="European Languages">
+                    <option value="NL" name="dutch">Nederlands (Dutch)</option>
+                    <option selected="selected" value="EN" name="English">English</option>
+                    <option value="fr" name="French">Français (French)</option>
+                    <option value="de" name="German">Deutsch (German)</option>
+                    <option value="it" name="Italian">Italiano (Italian) </option>
+                    <option value="pl" name="Polish">Polski (Polish) </option>
+                    <option value="pt" name="Portuguese">Português (Portuguese)</option>
+                    <option value="ru" name="Russian">pусский (Russian)</option>
+                    <option value="es" name="Spanish">Español (Spanish)</option>
+                </optgroup>
+            </select>
+
+</div>
+
+            </form>
+            <p id="vol">Volume:<Br/><Br/></p>
+            <p id="pitch">Pitch:<br/><br/></p>
+            <p id="rate">Rate:<br/><Br/></p>
+            <p id="Acc">Accent:<Br/><br/></p>
+            <script>
+                function myFunction(){
+                    var txt = document.getElementById("txter").value;
+                    var msg = new SpeechSynthesisUtterance(txt);
+                    var b = document.getElementById("ider").value;
+                    var NUM = document.getElementById("i").value;
+                    msg.volume = NUM;
+                    msg.lang = b;
+                    window.speechSynthesis.speak(msg);
+                }
+                function checkCompatibility(){
+                    if('speechSynthesis' in window){
+                        document.getElementById("compatibility").innerHTML = "SpeechSynthesis API is supported on Your Browser ✔"
+                        var msg = SpeechSynthesisUtterance("SpeechSynthesisUtterance API is supported on your Browser. Let's start speaking!")
+                        window.speechSynthesis.speak(msg)
+                    }
+                    else{
+                        document.getElementById("compatibility").innerHTML = "SpeechSynthesis API is NOT supported on your Browser ❌"
+                    }
+                }
+            </script>
+    </body>
+</html>

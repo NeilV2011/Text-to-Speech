@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Backwards Text Generator</title>
+        <link rel="stylesheet" href="thereverse.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Balthazar">
+    </head>
+    <body>
+        <h1>Reversed Text Generator</h1>
+        <textarea maxlength="50" oninput="reverseText()"placeholder="Text Should Come in Here..." id="id2"></textarea>
+        <textarea id="id1" placeholder="...Reversed Text Should Come Out Here" readonly></textarea>
+        <script>
+            function reverseText(){
+                var x = document.getElementById("id2").value;
+                document.getElementById("id1").innerHTML = x
+            }
+        </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation.</title>
+    <link rel="stylesheet" href="geolocation.css">
+  </head>
+  <body>
+    <h1>GeoLocation Application - APIs.net</h1>
+    <button onclick="getCoords()">Access GeoLocation</button>
+    <p id="parag">S</p>
+    <hr/>
+    <h1>Latitude</h1>
+    <script>
+      function getCoords(){
+        if(navigator.geolocation){
+          navigator.geolocation.watchPosition(showWhere);
+        }
+        else{
+          document.getElementById("parag").innerHTML = "GeoLocation is not Supported on Your Browser ❌"
+        }
+      }
+      function showWhere(position){
+        parag = latitude;
+        let parag = document.getElementById("parag").innerHTML;
+        let latitude = position.coords.latitude;
+      }
+    </script>
+  </body>
+</html>

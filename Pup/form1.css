@@ -1,0 +1,18 @@
+body{
+    background-color:cornsilk;
+}
+.div{
+    padding:0px;
+    margin-left:0px;
+    margin-top:0.01in;
+}
+select{
+    padding:10px;
+    width:110px;
+}
+h1{
+    color:darkslategray;
+    margin-top:20px;
+    max-width:20%;
+    width:20%;
+}

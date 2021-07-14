@@ -1,0 +1,15 @@
+h1{
+    background-color: rgb(6, 0, 88);
+}
+
+div {
+    cursor: zoom-in;
+}
+#sleep{
+    font-family:monospace;
+    padding:10px;
+    background-color:rgb(73, 73, 126);
+}
+#myImg{
+    filter:grays;
+}

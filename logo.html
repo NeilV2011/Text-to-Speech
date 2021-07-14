@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>L</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body onclick="jump()">
+        <div id="game">
+            <img id="dinosaur" height="110" src="https://freesvgdesigns.com/wp-content/uploads/2020/09/00021-500x500.png"> </div>
+            <img id="cactus" onclick="random()" src="data:image/png;base64,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"> </div>
+        </div>
+        <style>
+            #game{
+                width:100%; 
+                height:590px;
+                border:1px solid black;
+                display:flex;
+                overflow:hidden;
+            }
+            #dinosaur{
+                position:relative;
+                margin-top:470px;
+            }
+            @keyframes jumper{
+                from{margin-top:510px;}
+                30%{margin-top:400px;}
+                50%{margin-top:400px;}
+                70%{margin-top:400px;}
+                to{margin-top:510px;}
+            }
+            .animation{
+                animation:jumper 500ms linear;
+            }
+            #cactus{
+                background-color:red;
+                height:50px;
+                width:50px;
+                margin-left:1215px;
+                animation:mover 2s infinite linear;
+                display:flex;
+                margin-top:-4.1% !important;
+                border:1px solid red;
+                border-radius:15px;
+            }
+            @keyframes mover{
+                from{margin-left:1215px;}
+                to{margin-left:-50px;}
+            }
+        </style>
+        <script>
+                var dinosaur = document.getElementById("dinosaur");
+
+function jump(){
+    dinosaur.classList.add("animation");
+    setTimeout(function (){
+        dinosaur.classList.remove("animation");
+    }, 500)
+ }
+ function random(){
+     if(Math.Random() <0.5){
+         var block = document.getElementById("cactus");
+         block.style.backgroundImage = "url('huih')"
+     }
+ }
+        </script>
+    </body>
+</html>

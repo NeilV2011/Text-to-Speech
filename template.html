@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Computer.me  - YOUR Computer A-Z </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim">
+    </head>
+    <body>
+        <h1>All About Your Computer, A-Z<br/><button onclick="getLocation()">Access Data</button></h1>
+        <div class="geography">
+        <h2>Geography</h2>
+        <h3 id="b">Coordinates</h3>
+        <h5 id="c">        <h5 id="d"></h5>
+    </h5>
+    <h3>Altitude</h3>
+    <h5 id="e"></h5><h5 id="f"></h5>
+    <h3>Speed</h3>
+    <h5 id="g"></h5>
+</div>
+    <h1></h1>
+    <p id="idd"></p>
+    <p id="map"></p>
+                <style>
+            h1{
+                font-family:akronim;
+                font-weight:lighter;
+                text-align:center;
+                font-size:50px;
+            }
+            h2, h3{
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                ;
+                font-size:30px;
+            }
+            h3{
+                font-size:20px !important;
+            }
+            button{
+                border-radius:7.5px;
+                background-color:navy;
+                color:white;
+                height:50px;
+                width:120px;
+                font-family:verdana;
+            }
+            .geography{
+                border:1px solid black;
+                border-radius:5px;
+                padding:20px;
+                max-width:12.5%;
+            }
+        </style>
+        <script>
+                                    const b = document.getElementById("c");
+                                    const d = document.getElementById("d");
+                                    const e = document.getElementById("e");
+                                    const f = document.getElementById("f");
+                                    const image = document.getElementById("image");
+                                    var g = document.getElementById("g");
+
+                function getLocation(){
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    }
+                        else{
+                            b.innerHTML = "Coordinates - Not Available"
+                        }
+                    }
+                function showPosition(position){
+                    var ef = position.coords.accuracy;
+                    var altitude = position.coords.altitude;
+                    var accuracy = position.coords.altitudeAccuracy;
+                    var speed = position.coords.speed;
+                    d.innerHTML = "Accuracy: " + ef;
+                    b.innerHTML = "Coordinates: " + position.coords.latitude + ", " + position.coords.longitude;
+                    e.innerHTML = "Altitude: " + altitude;
+                    f.innerHTML = "Accuracy: " + accuracy;
+                    g.innerHTML = "Speed: " + speed;
+                }
+                
+        </script>
+    </body>
+</html>

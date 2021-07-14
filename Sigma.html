@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sigma - Anything & Everything</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sigma.css">
+        <script src="Sigma.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    </head>
+    <body>
+<h1>Sigma - Home</h1>
+<form onsubmit="myFunction()">
+<input id="txter"type="Text">
+<input type="submit">
+</form>
+<script>function myFunction(){
+    var txt = document.getElementById("txter").value;
+    var msg = new SpeechSynthesisUtterance(txt);
+    window.speechSynthesis.speak(msg)
+}</script>
+<p>Anything and everything, all by one </p>
+</body>
+</html>
